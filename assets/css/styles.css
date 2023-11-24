@@ -345,30 +345,129 @@ img{
     color: var(--title-color);
 }
 
-.educational__year{
+.education__year{
     font-size: var(--smaller-font-size);
 }
 
 /* =====SKILLS AND LANGUAGES ========= */
-.skills__content{
+.skills__content,
+.languages__content{
     grid-template-columns: repeat(2, 1fr);
 }
 
-.skills__content {
+.skills__content,
+.languages__content{
    gap: 0;
 }
 
-.skills__name{
+.skills__name,
+.languages__name{
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-3);
 }
 
-.skills__circle{
+.skills__circle,
+.languages__circle{
     display: inline-block;
     width: 5px;
     height: 5px;
     background-color: var(--text-color) ;
     border-radius: 50%;
     margin-right: .75rem;
+}
+/* REFERENCES */
+.references__content{
+    gap: .25rem;
+}
+
+.references__subtitle{
+    color: var(--text-color-light);
+}
+
+.references__subtitle,
+.references__contact{
+    font-size: var(--smaller-font-size);
+}
+
+ .references__title{
+    font-size: var(--h3-font-size);
+ }
+
+ /* ====== INTERESTS ====== */
+ .interests__container{
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: var(--mb-2);
+ }
+
+ .interests__content{
+    display: flex;
+   flex-direction: column; /*  icons up, Text below it */
+   align-items: center;
+ }
+
+ .interests__icons{
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+    margin-bottom: .25rem;
+ }
+
+ /* Scroll Top */
+ .scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background-color: var(--container-color-alt);
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    /* visibility: hidden; */
+ }
+
+ .scrolltop__icon{
+    font-size: 1.2rem;
+    color: var(--text-color);
+ }
+
+.show-scroll{
+    visibility: visible;
+    bottom: 5rem;
+}
+
+/* ======= MEDIA QUERIES ====== */
+/* For small devices, menu two columns */
+@media screen and (max-width: 320px) {
+    .nav__list{
+        grid-template-columns: repeat(2. 1fr);
+        gap: 1rem .5rem;
+    }
+    
+}
+
+/* Classes modified for large screen size */
+@media screen and (min-width: 968px){
+    body{
+        margin: 3rem 0;
+    }
+
+     .bd-container {
+         margin-left: auto;
+         margin-right: auto;
+        }
+    
+    .one-header,
+    .scrolltop{
+       display: none;
+    }
+
+    .resume{
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        background-color: var(--container-color);
+        box-shadow: 0 0 8px rgba(13,12,12,.15);
+    }
+    
 }
