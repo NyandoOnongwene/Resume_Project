@@ -49,8 +49,7 @@ html{
 body.dark-theme{
     --title-color: #F2F2F2;
         --text-color: #BFBFBF;
-        --text-color-light: #212121;
-        --container-color: #FAFAFA;
+        --container-color: #212121;
         --container-color-alt: #181616;
         --body-color: #2B2B2B;
 }
