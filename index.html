@@ -67,7 +67,7 @@
 
     <main class="-main bd-container">
         <!-- All elements withing this div, is genrated in PDF -->
-        <div class="resume">
+        <div class="resume" id="area-cv">
             <div class="resume__left">
                 <!-- ========== HOME ========= -->
                 <section class="home" id="home">
@@ -97,7 +97,14 @@
                         </span>
                     </div>
                   </div>
+
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
+                    <!-- Button to generate and download pdf. Available for desktop -->
+                    <i class='bx bx-download generate-pdf' title="Generate PDF"></i>
                 </section>
+                
 
 
       <!-- ======= SOCIAL ======== -->
@@ -361,7 +368,7 @@
 
 
     <!-- ========== HTML2PDF ========= -->
-    <script src=""> </script>
+    <script src="assets/js/html2pdf.bundle.min.js"> </script>
 
     <!-- ========== MAIN JS ========= -->
     <script src="/assets/js/main.js"> </script>
